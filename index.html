@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manikandan V | Web & Software Developer</title>
+  <meta name="description" content="Manikandan V – Full Stack Web Developer specializing in MERN stack, React, Node.js and MongoDB. Explore my projects and skills." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Share+Tech+Mono&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== CANVAS BACKGROUND ===== -->
+  <canvas id="bgCanvas"></canvas>
+
+  <!-- ===== CURSOR ===== -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">
+      <span class="logo-bracket">&lt;</span>MK<span class="logo-bracket">/&gt;</span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="nav-link active">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#certificates" class="nav-link">Certificates</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <a href="https://github.com/manikandan-2905" target="_blank" class="nav-github">
+      <i class="fab fa-github"></i> GitHub
+    </a>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <div class="hero-greeting">Hello, I'm</div>
+      <h1 class="hero-name">
+        <span class="name-glow">MANIKANDAN</span>
+        <span class="name-accent"> V</span>
+      </h1>
+      <div class="hero-title">
+        <span class="static-text">I'm a </span>
+        <span class="typed-text" id="typedText"></span>
+        <span class="cursor-blink">|</span>
+      </div>
+      <p class="hero-desc">
+        Full Stack Developer crafting high-performance web apps with the MERN stack. 
+        Passionate about clean code, intuitive UI, and scalable architectures.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">
+          <i class="fas fa-rocket"></i> View Projects
+        </a>
+        <a href="#contact" class="btn btn-secondary">
+          <i class="fas fa-paper-plane"></i> Hire Me
+        </a>
+        <a href="https://github.com/manikandan-2905" target="_blank" class="btn btn-ghost">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num" data-target="10">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">Projects</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="2">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">Internships</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="4">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">Certificates</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="avatar-container">
+        <div class="avatar-ring ring1"></div>
+        <div class="avatar-ring ring2"></div>
+        <div class="avatar-ring ring3"></div>
+        <div class="avatar-box">
+          <div class="avatar-placeholder">
+            <i class="fas fa-user-astronaut"></i>
+          </div>
+        </div>
+        <div class="orbit-dot dot1"><i class="fab fa-react"></i></div>
+        <div class="orbit-dot dot2"><i class="fab fa-node-js"></i></div>
+        <div class="orbit-dot dot3"><i class="fas fa-database"></i></div>
+        <div class="orbit-dot dot4"><i class="fab fa-js"></i></div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+      <span>Scroll Down</span>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// about me</span>
+        <h2 class="section-title">Who I <span class="neon-text">Am</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-card glass-card reveal">
+          <div class="about-icon"><i class="fas fa-graduation-cap"></i></div>
+          <h3>Education</h3>
+          <div class="edu-timeline">
+            <div class="edu-item">
+              <div class="edu-year">2025</div>
+              <div class="edu-info">
+                <h4>M.Sc Computer Science</h4>
+                <p>John's College · GPA: <span class="highlight">80%</span></p>
+              </div>
+            </div>
+            <div class="edu-item">
+              <div class="edu-year">2023</div>
+              <div class="edu-info">
+                <h4>B.Sc Computer Science</h4>
+                <p>John's College · GPA: <span class="highlight">87%</span></p>
+              </div>
+            </div>
+            <div class="edu-item">
+              <div class="edu-year">2020</div>
+              <div class="edu-info">
+                <h4>HSC Computer Science</h4>
+                <p>John's School · GPA: <span class="highlight">70%</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-card glass-card reveal">
+          <div class="about-icon"><i class="fas fa-code"></i></div>
+          <h3>What I Do</h3>
+          <p class="about-bio">
+            I'm a passionate <span class="neon-text">Full Stack Web Developer</span> from Tirunelveli, Tamil Nadu. 
+            I specialize in building complete web applications from database design to pixel-perfect frontends 
+            using the <span class="neon-text-pink">MERN stack</span>.
+          </p>
+          <p class="about-bio" style="margin-top:1rem;">
+            With internship experience in Web Development and Angular, along with certifications in 
+            AI and Big Data, I bring a well-rounded technical foundation to every project I build.
+          </p>
+          <div class="info-chips">
+            <div class="chip"><i class="fas fa-map-marker-alt"></i> Tirunelveli, TN</div>
+            <div class="chip"><i class="fas fa-language"></i> Tamil & English</div>
+            <div class="chip"><i class="fas fa-briefcase"></i> Open to Work</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS SECTION ===== -->
+  <section class="section section-dark" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// my skills</span>
+        <h2 class="section-title">Tech <span class="neon-text">Stack</span></h2>
+      </div>
+      <div class="skills-wrapper">
+        <div class="skills-bars reveal">
+          <h3 class="skills-subtitle">Proficiency</h3>
+          <div class="skill-bar-item">
+            <div class="skill-bar-label">
+              <span><i class="fab fa-react"></i> React.js</span>
+              <span class="skill-pct">85%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-width="85" style="--neon-color:#00f5ff"></div>
+            </div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-label">
+              <span><i class="fab fa-node-js"></i> Node.js</span>
+              <span class="skill-pct">80%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-width="80" style="--neon-color:#39ff14"></div>
+            </div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-label">
+              <span><i class="fas fa-database"></i> MongoDB</span>
+              <span class="skill-pct">80%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-width="80" style="--neon-color:#ff6b35"></div>
+            </div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-label">
+              <span><i class="fab fa-java"></i> Java</span>
+              <span class="skill-pct">75%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-width="75" style="--neon-color:#ff007f"></div>
+            </div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-label">
+              <span><i class="fab fa-python"></i> Python</span>
+              <span class="skill-pct">70%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-width="70" style="--neon-color:#bf5fff"></div>
+            </div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-label">
+              <span><i class="fas fa-code"></i> C++</span>
+              <span class="skill-pct">70%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-width="70" style="--neon-color:#ffdd00"></div>
+            </div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-label">
+              <span><i class="fab fa-git-alt"></i> Git</span>
+              <span class="skill-pct">80%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-width="80" style="--neon-color:#00f5ff"></div>
+            </div>
+          </div>
+        </div>
+        <div class="tech-orbs reveal">
+          <h3 class="skills-subtitle">Technologies</h3>
+          <div class="orbs-grid">
+            <div class="orb-card" style="--clr:#00f5ff"><i class="fab fa-react"></i><span>React</span></div>
+            <div class="orb-card" style="--clr:#39ff14"><i class="fab fa-node-js"></i><span>Node.js</span></div>
+            <div class="orb-card" style="--clr:#ff007f"><i class="fas fa-database"></i><span>MongoDB</span></div>
+            <div class="orb-card" style="--clr:#ff6b35"><i class="fab fa-js"></i><span>JavaScript</span></div>
+            <div class="orb-card" style="--clr:#bf5fff"><i class="fab fa-python"></i><span>Python</span></div>
+            <div class="orb-card" style="--clr:#ffdd00"><i class="fab fa-java"></i><span>Java</span></div>
+            <div class="orb-card" style="--clr:#00f5ff"><i class="fas fa-code"></i><span>C++</span></div>
+            <div class="orb-card" style="--clr:#39ff14"><i class="fab fa-git-alt"></i><span>Git</span></div>
+            <div class="orb-card" style="--clr:#ff007f"><i class="fab fa-html5"></i><span>HTML5</span></div>
+            <div class="orb-card" style="--clr:#ff6b35"><i class="fab fa-css3-alt"></i><span>CSS3</span></div>
+            <div class="orb-card" style="--clr:#bf5fff"><i class="fas fa-server"></i><span>Express</span></div>
+            <div class="orb-card" style="--clr:#ffdd00"><i class="fab fa-angular"></i><span>Angular</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS SECTION ===== -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// my work</span>
+        <h2 class="section-title">Featured <span class="neon-text">Projects</span></h2>
+        <p class="section-subtitle">Building real-world solutions with modern technologies</p>
+      </div>
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <div class="project-card glass-card reveal" data-index="1">
+          <div class="project-header">
+            <div class="project-number">01</div>
+            <div class="project-links">
+              <a href="https://github.com/manikandan-2905" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+              <a href="#" class="deploy-link" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="project-icon" style="--clr:#00f5ff"><i class="fas fa-camera-retro"></i></div>
+          <h3 class="project-title">Studio Management System</h3>
+          <p class="project-desc">
+            A full-stack MERN application with 3 role-based modules — Manager, Admin & User. 
+            Handles admin accounts, payments, subscriptions, studio content (albums, frames, event photo uploads), 
+            pricing, and customer photo selection online.
+          </p>
+          <div class="project-tags">
+            <span class="tag" style="--tc:#00f5ff">React</span>
+            <span class="tag" style="--tc:#39ff14">Node.js</span>
+            <span class="tag" style="--tc:#ff007f">MongoDB</span>
+            <span class="tag" style="--tc:#ff6b35">Express</span>
+          </div>
+          <div class="project-footer">
+            <span class="status deployed">
+              <i class="fas fa-circle"></i> Replace Deploy Link
+            </span>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card glass-card reveal" data-index="2">
+          <div class="project-header">
+            <div class="project-number">02</div>
+            <div class="project-links">
+              <a href="https://github.com/manikandan-2905" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+              <a href="#" class="deploy-link" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="project-icon" style="--clr:#ff007f"><i class="fas fa-comments"></i></div>
+          <h3 class="project-title">Juicee Live Chat App</h3>
+          <p class="project-desc">
+            Real-time chat app inspired by WhatsApp & Instagram using the MERN stack. 
+            Features friend requests, real-time online status, auto-delete messages on exit, 
+            and integrated calling — all with a sleek social interface.
+          </p>
+          <div class="project-tags">
+            <span class="tag" style="--tc:#00f5ff">React</span>
+            <span class="tag" style="--tc:#39ff14">Socket.io</span>
+            <span class="tag" style="--tc:#ff007f">MongoDB</span>
+            <span class="tag" style="--tc:#ff6b35">Node.js</span>
+          </div>
+          <div class="project-footer">
+            <span class="status deployed">
+              <i class="fas fa-circle"></i> Replace Deploy Link
+            </span>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card glass-card reveal" data-index="3">
+          <div class="project-header">
+            <div class="project-number">03</div>
+            <div class="project-links">
+              <a href="https://github.com/manikandan-2905" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+              <a href="#" class="deploy-link" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="project-icon" style="--clr:#39ff14"><i class="fas fa-shopping-cart"></i></div>
+          <h3 class="project-title">Enzo Supermarket Billing System</h3>
+          <p class="project-desc">
+            Full-stack billing app using React, Material UI, Node.js, Express & MongoDB. 
+            Manages products, invoices, and customer data with real-time updates 
+            and dynamic tables for seamless supermarket billing operations.
+          </p>
+          <div class="project-tags">
+            <span class="tag" style="--tc:#00f5ff">React</span>
+            <span class="tag" style="--tc:#39ff14">Material UI</span>
+            <span class="tag" style="--tc:#ff007f">MongoDB</span>
+            <span class="tag" style="--tc:#ff6b35">Express</span>
+          </div>
+          <div class="project-footer">
+            <span class="status deployed">
+              <i class="fas fa-circle"></i> Replace Deploy Link
+            </span>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card glass-card reveal" data-index="4">
+          <div class="project-header">
+            <div class="project-number">04</div>
+            <div class="project-links">
+              <a href="https://github.com/manikandan-2905" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+              <a href="#" class="deploy-link" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="project-icon" style="--clr:#bf5fff"><i class="fas fa-gavel"></i></div>
+          <h3 class="project-title">AJ Law Management System</h3>
+          <p class="project-desc">
+            A comprehensive legal document management dashboard featuring vendor and customer 
+            management, EC/Nagal/Agreement/Deed tracking, payment ledger, real-time analytics, 
+            and print-ready report generation.
+          </p>
+          <div class="project-tags">
+            <span class="tag" style="--tc:#00f5ff">React</span>
+            <span class="tag" style="--tc:#39ff14">Node.js</span>
+            <span class="tag" style="--tc:#ff007f">MongoDB</span>
+            <span class="tag" style="--tc:#bf5fff">Recharts</span>
+          </div>
+          <div class="project-footer">
+            <span class="status deployed">
+              <i class="fas fa-circle"></i> <a href="https://aj-law.netlify.app" target="_blank">aj-law.netlify.app (username:admin,password:123)</a> 
+            </span>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="project-card glass-card reveal" data-index="5">
+          <div class="project-header">
+            <div class="project-number">05</div>
+            <div class="project-links">
+              <a href="https://github.com/manikandan-2905" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+              <a href="#" class="deploy-link" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="project-icon" style="--clr:#ffdd00"><i class="fas fa-project-diagram"></i></div>
+          <h3 class="project-title">Coming Soon — Project #5</h3>
+          <p class="project-desc">
+            Another exciting full-stack project currently in development. 
+            Replace this card with your actual project details — title, description, 
+            tech stack, and live deploy link.
+          </p>
+          <div class="project-tags">
+            <span class="tag" style="--tc:#00f5ff">MERN</span>
+            <span class="tag" style="--tc:#39ff14">Full Stack</span>
+            <span class="tag" style="--tc:#ffdd00">Coming Soon</span>
+          </div>
+          <div class="project-footer">
+            <span class="status wip"><i class="fas fa-circle"></i> In Progress</span>
+          </div>
+        </div>
+
+        <!-- GitHub CTA Card -->
+        <div class="project-card github-cta glass-card reveal" data-index="6">
+          <div class="github-cta-inner">
+            <i class="fab fa-github github-big-icon"></i>
+            <h3>More on GitHub</h3>
+            <p>Explore all my repositories, contributions, and open-source work on GitHub.</p>
+            <a href="https://github.com/manikandan-2905" target="_blank" class="btn btn-primary" style="margin-top:1.5rem;">
+              <i class="fab fa-github"></i> Visit My GitHub
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CERTIFICATES SECTION ===== -->
+  <section class="section section-dark" id="certificates">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// achievements</span>
+        <h2 class="section-title">Certificates & <span class="neon-text">Internships</span></h2>
+      </div>
+      <div class="certs-grid">
+
+        <div class="cert-card glass-card reveal">
+          <div class="cert-badge" style="--clr:#00f5ff"><i class="fas fa-globe"></i></div>
+          <div class="cert-content">
+            <div class="cert-period">Jan – Apr 2025</div>
+            <h3 class="cert-title">Internship in Web Development</h3>
+            <p class="cert-org"><i class="fas fa-building"></i> LC IND, Tirunelveli</p>
+            <div class="cert-tag" style="--tc:#00f5ff">Internship</div>
+          </div>
+        </div>
+
+        <div class="cert-card glass-card reveal">
+          <div class="cert-badge" style="--clr:#ff007f"><i class="fab fa-angular"></i></div>
+          <div class="cert-content">
+            <div class="cert-period">Jan – Aug 2024</div>
+            <h3 class="cert-title">Internship in Angular</h3>
+            <p class="cert-org"><i class="fas fa-building"></i> ICONX, Tirunelveli</p>
+            <div class="cert-tag" style="--tc:#ff007f">Internship</div>
+          </div>
+        </div>
+
+        <div class="cert-card glass-card reveal">
+          <div class="cert-badge" style="--clr:#bf5fff"><i class="fas fa-brain"></i></div>
+          <div class="cert-content">
+            <div class="cert-period">Feb – Mar 2024</div>
+            <h3 class="cert-title">Artificial Intelligence</h3>
+            <p class="cert-org"><i class="fas fa-building"></i> NOVITECH</p>
+            <div class="cert-tag" style="--tc:#bf5fff">Certificate</div>
+          </div>
+        </div>
+
+        <div class="cert-card glass-card reveal">
+          <div class="cert-badge" style="--clr:#ffdd00"><i class="fas fa-server"></i></div>
+          <div class="cert-content">
+            <div class="cert-period">Aug – Oct 2024</div>
+            <h3 class="cert-title">Big Data Computing</h3>
+            <p class="cert-org"><i class="fas fa-building"></i> NPTEL</p>
+            <div class="cert-tag" style="--tc:#ffdd00">Certificate</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// get in touch</span>
+        <h2 class="section-title">Contact <span class="neon-text">Me</span></h2>
+        <p class="section-subtitle">Available for freelance & full-time opportunities</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <h3>Let's <span class="neon-text">Connect</span></h3>
+          <p class="contact-intro">
+            I'm currently open to new opportunities. Whether you have a project in mind or 
+            just want to say hi, my inbox is always open!
+          </p>
+          <div class="contact-cards">
+            <a href="mailto:mani261829@gmail.com" class="contact-item">
+              <div class="contact-icon" style="--clr:#00f5ff"><i class="fas fa-envelope"></i></div>
+              <div>
+                <div class="contact-label">Email</div>
+                <div class="contact-val">mani261829@gmail.com</div>
+              </div>
+            </a>
+            <a href="tel:7639483476" class="contact-item">
+              <div class="contact-icon" style="--clr:#ff007f"><i class="fas fa-phone"></i></div>
+              <div>
+                <div class="contact-label">Phone</div>
+                <div class="contact-val">+91 7639483476</div>
+              </div>
+            </a>
+            <div class="contact-item">
+              <div class="contact-icon" style="--clr:#39ff14"><i class="fas fa-map-marker-alt"></i></div>
+              <div>
+                <div class="contact-label">Location</div>
+                <div class="contact-val">Melapalayam, Tirunelveli – 627005</div>
+              </div>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="https://github.com/manikandan-2905" target="_blank" class="social-btn" style="--clr:#00f5ff">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="mailto:mani261829@gmail.com" class="social-btn" style="--clr:#ff007f">
+              <i class="fas fa-envelope"></i>
+            </a>
+            <a href="tel:7639483476" class="social-btn" style="--clr:#39ff14">
+              <i class="fas fa-phone"></i>
+            </a>
+          </div>
+        </div>
+        <form class="contact-form glass-card reveal" id="contactForm">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <div class="input-wrap">
+              <i class="fas fa-user"></i>
+              <input type="text" id="name" placeholder="John Doe" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <div class="input-wrap">
+              <i class="fas fa-envelope"></i>
+              <input type="email" id="email" placeholder="john@example.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <div class="input-wrap">
+              <i class="fas fa-tag"></i>
+              <input type="text" id="subject" placeholder="Project Inquiry" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <div class="input-wrap textarea-wrap">
+              <i class="fas fa-comment"></i>
+              <textarea id="message" placeholder="Hey Manikandan, I'd like to discuss..." rows="5" required></textarea>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full" id="sendBtn">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+          <div class="form-success" id="formSuccess">
+            <i class="fas fa-check-circle"></i> Message sent! I'll get back to you soon.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-bracket">&lt;</span>MK<span class="logo-bracket">/&gt;</span>
+      </div>
+      <p class="footer-copy">
+        Designed & Built with <span class="neon-text">❤</span> by <span class="neon-text">Manikandan V</span>
+      </p>
+      <p class="footer-sub">© 2026 All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
